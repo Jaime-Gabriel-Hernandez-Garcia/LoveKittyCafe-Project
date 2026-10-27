@@ -1,0 +1,154 @@
+/* Responsive breakpoints for Love Kitty Café (Desktop 1440px, Tablet 768px, Phone 390px) */
+
+@media (max-width: 1024px) {
+  .hero-view {
+    grid-column: 1 / 13;
+    min-height: 68svh;
+  }
+
+  .hero-swatches {
+    grid-column: 1 / 13;
+    grid-template-rows: none;
+    grid-template-columns: repeat(5, 1fr);
+    min-height: auto;
+  }
+
+  .swatch-link {
+    min-height: 5.5rem;
+    padding: 0.9rem;
+  }
+
+  .intro-left {
+    grid-column: 1 / 6;
+  }
+
+  .intro-right {
+    grid-column: 6 / 13;
+    padding-top: 0;
+  }
+
+  .menu-aside {
+    grid-column: 1 / 6;
+  }
+
+  .menu-table-wrap {
+    grid-column: 6 / 13;
+  }
+
+  .showcase-lead-img,
+  .showcase-lead-copy {
+    grid-column: 1 / 13;
+  }
+
+  .showcase-figure-left {
+    grid-column: 1 / 7;
+  }
+
+  .showcase-figure-right {
+    grid-column: 7 / 13;
+  }
+
+  .live-builder {
+    grid-column: 1 / 7;
+  }
+
+  .guest-card-col {
+    grid-column: 7 / 13;
+  }
+
+  .visit-card {
+    grid-column: 1 / 6;
+  }
+
+  .map-frame-col {
+    grid-column: 6 / 13;
+  }
+}
+
+@media (max-width: 760px) {
+  :root {
+    --step-display: clamp(2.1rem, 8.2vw, 2.75rem);
+    --step-head: clamp(1.75rem, 6.5vw, 2.2rem);
+    --margin: 1.25rem;
+    --section-pad: 4.25rem;
+  }
+
+  .programme-list,
+  .statement {
+    font-size: var(--step-body);
+  }
+
+  .showcase-figure-right {
+    margin-top: 0;
+  }
+
+  .proposal-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .hero-stage {
+    padding: 8px;
+    gap: 8px;
+    min-height: auto;
+  }
+
+  .hero-view {
+    min-height: 64svh;
+    padding: 1.25rem;
+  }
+
+  .hero-swatches {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .swatch-link {
+    min-height: 3.35rem;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.85rem 1.1rem;
+  }
+
+  .intro-left,
+  .intro-right,
+  .menu-aside,
+  .menu-table-wrap,
+  .showcase-lead-figure,
+  .showcase-lead-img,
+  .showcase-lead-copy,
+  .showcase-figure-left,
+  .showcase-figure-right,
+  .live-builder,
+  .guest-card-col,
+  .visit-card,
+  .map-frame-col,
+  .footer-note-block,
+  .footer-note-block-right,
+  .footer-backtop,
+  .footer-socials,
+  .footer-credits {
+    grid-column: 1 / 13;
+  }
+
+  .intro-points,
+  .builder-items,
+  .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .dish-tag {
+    display: none;
+  }
+
+  .map-frame-col,
+  .map-iframe {
+    min-height: 340px;
+    height: 340px;
+  }
+
+  .footer-backtop {
+    justify-self: start;
+  }
+}

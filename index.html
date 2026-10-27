@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es-MX" data-theme="pastel">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Kitty Café · Postres y Café Kawaii en San Felipe de Jesús, CDMX</title>
+  <meta name="description"
+    content="Love Kitty Café en Calpulalpan 252, San Felipe de Jesús, Gustavo A. Madero, CDMX. Kitty Fresas Gourmet, Kitty Lattes, frappés, waffles y cenas temáticas.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="PUBLIC/CSS/style.css">
+  <link rel="stylesheet" href="PUBLIC/CSS/media.css">
+</head>
+
+<body>
+
+  <!-- Top Bar: Live Status & Proposal Switcher (Propuesta 1 vs Propuesta 2) -->
+  <header class="proposal-bar" aria-label="Selector de propuesta visual y estado del local">
+    <div class="proposal-bar-left">
+      <span class="status-pill">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="live-status-text">Miércoles a domingo · Calpulalpan 252, CDMX</span>
+      </span>
+      <a href="https://maps.app.goo.gl/KW5aJsgtkSJgrUXC6" target="_blank" rel="noopener" class="text-link">
+        Calpulalpan 252 esq. Tulipán, San Felipe de Jesús
+      </a>
+    </div>
+    <div class="proposal-Right" role="group" aria-label="Cambiar propuesta de diseño">
+      <button type="button" class="theme-btn is-active" data-set-theme="pastel" aria-pressed="true">
+        Propuesta 1 · Kawaii Pastel
+      </button>
+      <button type="button" class="theme-btn" data-set-theme="neon" aria-pressed="false">
+        Propuesta 2 · Rosa Neón
+      </button>
+      <a href="propuesta-2.html" class="text-link">Abrir Propuesta 2 aparte</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO: Swatch Column Beside the View -->
+    <section class="hero-stage" id="inicio" aria-label="Presentación de Love Kitty Café">
+      <div class="hero-view">
+        <img src="PUBLIC/IMG/hero-cafe.jpg" width="1920" height="1080"
+          alt="Interior de Love Kitty Café con mesas rosadas, barra de postres y luz cálida en Ciudad de México"
+          class="hero-media" decoding="async">
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="hero-top" data-reveal style="--d: 0">
+          <a href="#inicio" class="brand-mark">
+            <svg class="brand-bow" viewBox="0 0 48 32" fill="none" aria-hidden="true">
+              <path d="M4 8C4 3.5 11 2 18 9L22 14L18 19C11 26 4 24.5 4 20V8Z" fill="#FF2A85" />
+              <path d="M44 8C44 3.5 37 2 30 9L26 14L30 19C37 26 44 24.5 44 20V8Z" fill="#FF2A85" />
+              <circle cx="24" cy="14" r="5.5" fill="#FFF5F8" />
+            </svg>
+            <span>Love Kitty Café</span>
+          </a>
+          <span class="hero-location-tag">Gustavo A. Madero · CDMX</span>
+        </div>
+
+        <div class="hero-middle" data-reveal style="--d: 1">
+          <h1 class="display-title">Fresas rubí y café kawaii</h1>
+        </div>
+
+        <div class="hero-bottom" data-reveal style="--d: 2">
+          <p class="hero-lead">
+            Barra de fresas gourmet con crema batida, lattes rosados, waffles belgas y cenas temáticas en Calpulalpan
+            252, San Felipe de Jesús.
+          </p>
+          <div class="hero-actions">
+            <a href="#pedido" class="btn-primary">Armar pedido o reservar</a>
+            <a href="#carta" class="btn-secondary">Ver carta y precios</a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="hero-swatches" aria-label="Secciones de la página">
+        <a href="#historia" class="swatch-link swatch-1">
+          <span>El rincón rosa</span>
+          <span class="swatch-sub">San Felipe de Jesús</span>
+        </a>
+        <a href="#carta" class="swatch-link swatch-2">
+          <span>Carta y precios</span>
+          <span class="swatch-sub">Fresas, lattes y snacks</span>
+        </a>
+        <a href="#especialidades" class="swatch-link swatch-3">
+          <span>Especialidades</span>
+          <span class="swatch-sub">Hecho al momento</span>
+        </a>
+        <a href="#pedido" class="swatch-link swatch-4">
+          <span>Pedido WhatsApp</span>
+          <span class="swatch-sub">Cotizador y reservas</span>
+        </a>
+        <a href="#ubicacion" class="swatch-link swatch-5">
+          <span>Mapa y horario</span>
+          <span class="swatch-sub">Calpulalpan 252</span>
+        </a>
+      </nav>
+    </section>
+
+    <!-- SECTION 1: Intro — Split Stage -->
+    <section class="chapter chapter-paper" id="historia">
+      <div class="wrap grid-12">
+        <div class="intro-left" data-reveal style="--d: 0">
+          <h2 class="section-heading">Dulcería de tarde y noche</h2>
+          <div class="intro-photo-frame">
+            <img src="PUBLIC/IMG/kitty-fresas.jpg" width="1200" height="1500"
+              alt="Copa de Kitty Fresas Gourmet con crema batida, chocolate rubí y moño rosa" loading="lazy"
+              decoding="async">
+          </div>
+          <div class="intro-meta-box">
+            <strong>Esquina Calpulalpan 252 y Tulipán</strong>
+            <p class="body-copy">
+              Abrimos de miércoles a viernes de 17:00 a 22:00 h, y sábados y domingos desde las 14:00 hasta las 22:00 h
+              en Colonia San Felipe de Jesús.
+            </p>
+          </div>
+        </div>
+
+        <div class="intro-right" data-reveal style="--d: 2">
+          <p class="statement">
+            En Love Kitty Café cada postre sale decorado al momento: fresas seleccionadas con crema de la casa, espuma
+            con silueta felina y pan artesanal recién horneado.
+          </p>
+          <p class="body-copy">
+            Nacimos en el corazón de Gustavo A. Madero como un punto de encuentro para amantes de la estética kawaii,
+            tardes de cosplay, festejos de cumpleaños y citas dulces. Puedes visitarnos en mesa, apartar tu lugar para
+            festejar o pedir directo por WhatsApp y plataformas.
+          </p>
+          <dl class="intro-points">
+            <div class="intro-point" data-reveal style="--d: 3">
+              <dt>Fresas del día</dt>
+              <dd>Cortadas cada tarde con crema batida artesanal, chocolate blanco rosado y toppings crujientes.</dd>
+            </div>
+            <div class="intro-point" data-reveal style="--d: 4">
+              <dt>Festejos y cosplay</dt>
+              <dd>Mesas decoradas para cumpleaños, pasteles sobre pedido y bebidas temáticas sin alcohol.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Menu List — Full Menu with Prices -->
+    <section class="chapter chapter-base" id="carta">
+      <div class="wrap">
+        <h2 class="section-heading" data-reveal style="--d: 0">Carta completa de la casa</h2>
+
+        <div class="grid-12">
+          <aside class="menu-aside" data-reveal style="--d: 1">
+            <div class="menu-portrait">
+              <img src="PUBLIC/IMG/kitty-latte.jpg" width="1200" height="1500"
+                alt="Kitty Latte rosa con arte en espuma junto a frappé de fresa con crema" loading="lazy"
+                decoding="async">
+            </div>
+            <div class="menu-Secondary-card">
+              <strong>Pasteles y ediciones de temporada</strong>
+              <p class="body-copy">
+                En otoño e invierno horneamos pan de muerto relleno y pasteles personalizados con moños de chocolate.
+                Pregunta disponibilidad por WhatsApp.
+              </p>
+              <a href="https://wa.me/525528659717?text=Hola%20Love%20Kitty%20Caf%C3%A9%2C%20quiero%20cotizar%20un%20pastel%20personalizado"
+                target="_blank" rel="noopener" class="text-link">
+                Cotizar pastel especial por WhatsApp
+              </a>
+            </div>
+          </aside>
+
+          <div class="menu-table-wrap">
+            <!-- Group 1 -->
+            <div class="menu-group" data-reveal style="--d: 2">
+              <h3>Fresas gourmet y postres</h3>
+              <table class="menu-table" aria-label="Menú de fresas gourmet y repostería">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Kitty Fresas Gourmet Clásicas</span>
+                      <span class="dish-desc">Fresas frescas en capas de crema dulce de la casa, lluvia de chocolate
+                        rubí y oblea rosa.</span>
+                    </td>
+                    <td class="dish-tag">Favorito</td>
+                    <td class="dish-price">$95</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Litro Kitty Fresas Suprema</span>
+                      <span class="dish-desc">Un litro completo con doble crema batida, nuez garapiñada, perlas dulces y
+                        moño de chocolate.</span>
+                    </td>
+                    <td class="dish-tag">Para dos</td>
+                    <td class="dish-price">$165</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Waffle Belga Kitty</span>
+                      <span class="dish-desc">Waffle dorado al momento con fresas rebanadas, helado de vainilla y jarabe
+                        de frutos rojos.</span>
+                    </td>
+                    <td class="dish-tag">Caliente</td>
+                    <td class="dish-price">$115</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Cheesecake Rosa de Frambuesa</span>
+                      <span class="dish-desc">Rebanada cremosa estilo Nueva York con coulis de frambuesa natural y
+                        galleta de mantequilla.</span>
+                    </td>
+                    <td class="dish-tag">Vitrina</td>
+                    <td class="dish-price">$98</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Group 2 -->
+            <div class="menu-group" data-reveal style="--d: 3">
+              <h3>Café, frappés y esquimos</h3>
+              <table class="menu-table" aria-label="Menú de bebidas calientes y frías">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Kitty Latte Rosa</span>
+                      <span class="dish-desc">Espresso suave con leche aterciopelada de fresa y vainilla, coronado con
+                        arte felino en espuma.</span>
+                    </td>
+                    <td class="dish-tag">Firma</td>
+                    <td class="dish-price">$78</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Kitty Frappé de Fresa o Taro</span>
+                      <span class="dish-desc">Bebida helada batida con crema chantilly, polvo de fresa liofilizada y
+                        galleta decorada.</span>
+                    </td>
+                    <td class="dish-tag">Frío</td>
+                    <td class="dish-price">$88</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Kitty Esquimo Tradicional</span>
+                      <span class="dish-desc">Leche fría espumosa a punto de nieve en sabores fresa, vainilla francesa,
+                        chocolate o rompope.</span>
+                    </td>
+                    <td class="dish-tag">Espumoso</td>
+                    <td class="dish-price">$75</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Pink Matcha &amp; White Mocha</span>
+                      <span class="dish-desc">Té verde ceremonial o chocolate blanco belga con cubierta rosa de leche
+                        vaporizada.</span>
+                    </td>
+                    <td class="dish-tag">Especial</td>
+                    <td class="dish-price">$85</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="menu-group" data-reveal style="--d: 4">
+              <h3>Cocina salada y snacks</h3>
+              <table class="menu-table" aria-label="Menú de comida salada y snacks">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Kitty Burger con Papas</span>
+                      <span class="dish-desc">Carne de res a la plancha, queso cheddar fundido, tocino crujiente,
+                        aderezo rosa y papas a la francesa.</span>
+                    </td>
+                    <td class="dish-tag">Completo</td>
+                    <td class="dish-price">$135</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Dedos de Queso Mozzarella</span>
+                      <span class="dish-desc">Seis piezas empanizadas al momento acompañadas de salsa marinara casera y
+                        aderezo ranch.</span>
+                    </td>
+                    <td class="dish-tag">Para picar</td>
+                    <td class="dish-price">$90</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="dish-name">Canasta de Papas Gajo</span>
+                      <span class="dish-desc">Papas crujientes sazonadas con paprika dulce, queso líquido y lluvia de
+                        tocino.</span>
+                    </td>
+                    <td class="dish-tag">Snack</td>
+                    <td class="dish-price">$75</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Showcase — Dark Chapter Visual Gallery -->
+    <section class="chapter chapter-dark" id="especialidades">
+      <div class="wrap">
+        <h2 class="section-heading" data-reveal style="--d: 0">Recién salido de barra</h2>
+
+        <div class="showcase-stage">
+          <figure class="showcase-lead-figure" data-reveal style="--d: 1">
+            <div class="showcase-lead-img">
+              <img src="PUBLIC/IMG/kitty-waffles.jpg" width="1200" height="900"
+                alt="Waffles belgas dorados con fresas frescas, helado de vainilla y hamburguesa gourmet al fondo"
+                loading="lazy" decoding="async">
+            </div>
+            <figcaption class="showcase-lead-copy">
+              <h3>Waffles y cenas temáticas</h3>
+              <p>Masa crujiente por fuera y suave por dentro, servida con fruta fresca recién cortada o acompañada de
+                nuestra Kitty Burger con papas.</p>
+              <a href="#pedido" class="btn-primary">Agregar al pedido</a>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-figure showcase-figure-left" data-reveal style="--d: 2">
+            <div class="showcase-figure-img">
+              <img src="PUBLIC/IMG/hof-rheinblick-geisenheim-strawberry-dessert.jpg" width="1920" height="1439"
+                alt="Postre en capas de puré de fresa, crema dulce y galleta artesanal" loading="lazy" decoding="async">
+            </div>
+            <figcaption>
+              <h3>Capas de fresa y crema</h3>
+              <p>Equilibrio entre acidez natural de fresa y crema batida ligeramente avainillada.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="showcase-figure showcase-figure-right" data-reveal style="--d: 3">
+            <div class="showcase-figure-img">
+              <img src="PUBLIC/IMG/bavarian-cream-with-strawberries.jpg" width="1920" height="1536"
+                alt="Crema bávara de vainilla acompañada de fresas frescas" loading="lazy" decoding="async">
+            </div>
+            <figcaption>
+              <h3>Repostería de temporada</h3>
+              <p>Postres suaves de vainilla y frutos rojos para cerrar la tarde en San Felipe de Jesús.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Live Interactive WhatsApp Order & Table Reservation + Programme Card -->
+    <section class="chapter chapter-paper" id="pedido">
+      <div class="wrap">
+        <h2 class="section-heading" data-reveal style="--d: 0">Arma pedido o reserva</h2>
+
+        <div class="grid-12">
+          <!-- Interactive Builder (data-ui) -->
+          <div class="live-builder" data-ui data-reveal style="--d: 1">
+            <div class="builder-tabs" role="tablist" aria-label="Tipo de solicitud">
+              <button type="button" class="builder-tab is-active" role="tab" aria-selected="true"
+                data-builder-mode="pedido">
+                Pedido para recoger o envío
+              </button>
+              <button type="button" class="builder-tab" role="tab" aria-selected="false" data-builder-mode="reserva">
+                Reservar mesa en el local
+              </button>
+            </div>
+
+            <div>
+              <p class="body-copy" style="margin-bottom: 0.65rem;">Selecciona tus antojos para calcular el estimado y
+                armar tu mensaje de WhatsApp:</p>
+              <div class="builder-items">
+                <label class="item-Option is-selected">
+                  <input type="checkbox" checked data-name="Kitty Fresas Gourmet" data-price="95">
+                  <span>Kitty Fresas Gourmet</span>
+                  <strong class="nums">$95</strong>
+                </label>
+                <label class="item-Option is-selected">
+                  <input type="checkbox" checked data-name="Kitty Latte Rosa" data-price="78">
+                  <span>Kitty Latte Rosa</span>
+                  <strong class="nums">$78</strong>
+                </label>
+                <label class="item-Option">
+                  <input type="checkbox" data-name="Litro Kitty Fresas" data-price="165">
+                  <span>Litro Kitty Fresas</span>
+                  <strong class="nums">$165</strong>
+                </label>
+                <label class="item-Option">
+                  <input type="checkbox" data-name="Kitty Frappé Fresa" data-price="88">
+                  <span>Kitty Frappé Fresa</span>
+                  <strong class="nums">$88</strong>
+                </label>
+                <label class="item-Option">
+                  <input type="checkbox" data-name="Waffle Belga Kitty" data-price="115">
+                  <span>Waffle Belga Kitty</span>
+                  <strong class="nums">$115</strong>
+                </label>
+                <label class="item-Option">
+                  <input type="checkbox" data-name="Kitty Burger con Papas" data-price="135">
+                  <span>Kitty Burger + Papas</span>
+                  <strong class="nums">$135</strong>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="field-group">
+                <label for="guest-name">Tu nombre</label>
+                <input type="text" id="guest-name" class="field-input" placeholder="Ej. Valeria o Gabriel">
+              </div>
+              <div class="field-group">
+                <label for="order-notes">Sabor o nota especial</label>
+                <input type="text" id="order-notes" class="field-input"
+                  placeholder="Ej. Leche deslactosada, extra crema">
+              </div>
+            </div>
+
+            <div class="form-row-2" id="reservation-fields" style="display: none;">
+              <div class="field-group">
+                <label for="visit-date">Día de visita (Mié a Dom)</label>
+                <input type="date" id="visit-date" class="field-input">
+              </div>
+              <div class="field-group">
+                <label for="visit-time">Hora y personas</label>
+                <select id="visit-time" class="field-input">
+                  <option value="17:30 · 2 personas">17:30 h · 2 personas</option>
+                  <option value="18:30 · 2 personas">18:30 h · 2 personas</option>
+                  <option value="19:30 · 4 personas">19:30 h · 4 personas</option>
+                  <option value="20:30 · 4 personas">20:30 h · 4 personas</option>
+                  <option value="15:00 Fin de semana · 4 personas">15:00 h (Sáb/Dom) · 4 personas</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="builder-summary">
+              <div>
+                <span class="body-copy" id="builder-count">2 especialidades seleccionadas</span>
+                <p>Total estimado</p>
+              </div>
+              <span class="summary-total nums" id="builder-total">$173 MXN</span>
+            </div>
+
+            <div class="hero-actions">
+              <a id="whatsapp-send-btn" href="https://wa.me/525528659717" target="_blank" rel="noopener"
+                class="btn-primary" style="width: 100%;">
+                Enviar pedido por WhatsApp ($173 MXN)
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Printed Guest Programme & Delivery Channels -->
+          <div class="guest-card-col" data-reveal style="--d: 2">
+            <div class="printed-programme">
+              <h3>Lo que celebramos en casa</h3>
+              <img src="PUBLIC/IMG/strawberry-ice-cream-dessert.jpg" width="1571" height="1109"
+                alt="Plato de fresas frescas con helado y crema batida" class="programme-photo" loading="lazy"
+                decoding="async">
+              <p class="programme-list">
+                Cumpleaños kawaii &nbsp;·&nbsp; Tardes de cosplay &nbsp;·&nbsp; Citas con fresas gourmet &nbsp;·&nbsp;
+                Viernes de esquimos &nbsp;·&nbsp; Sábados de waffles &nbsp;·&nbsp; Pasteles personalizados
+              </p>
+              <p class="body-copy">
+                Atención directa en el teléfono +52 55 2865 9717 y entregas a domicilio en Gustavo A. Madero y zonas
+                cercanas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Location, Hours & Interactive Google Maps -->
+    <section class="chapter chapter-base" id="ubicacion">
+      <div class="wrap">
+        <h2 class="section-heading" data-reveal style="--d: 0">Visítanos en San Felipe</h2>
+
+        <div class="grid-12">
+          <div class="visit-card" data-reveal style="--d: 1">
+            <h3>Love Kitty Café</h3>
+            <p class="body-copy">
+              Calle Calpulalpan 252, esquina con Tulipán, Colonia San Felipe de Jesús, Alcaldía Gustavo A. Madero, C.P.
+              07510, Ciudad de México.
+            </p>
+
+            <table class="hours-table" aria-label="Horarios de apertura">
+              <tbody>
+                <tr>
+                  <td>Miércoles a viernes</td>
+                  <td class="nums">17:00 – 22:00</td>
+                </tr>
+                <tr>
+                  <td>Sábado y domingo</td>
+                  <td class="nums">14:00 – 22:00</td>
+                </tr>
+                <tr>
+                  <td>Lunes y martes</td>
+                  <td>Cerrado</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="body-copy">
+              Teléfono y WhatsApp directo: <strong class="nums">+52 55 2865 9717</strong>
+            </p>
+
+            <div class="visit-actions">
+              <a href="https://maps.app.goo.gl/KW5aJsgtkSJgrUXC6" target="_blank" rel="noopener" class="btn-primary">
+                Abrir ubicación en Google Maps
+              </a>
+              <a href="https://wa.me/525528659717?text=Hola%20Love%20Kitty%20Caf%C3%A9%2C%20%C2%BFtienen%20servicio%20ahorita%3F"
+                target="_blank" rel="noopener" class="btn-secondary">
+                Escribir al WhatsApp 55 2865 9717
+              </a>
+            </div>
+          </div>
+
+          <div class="map-frame-col" data-reveal style="--d: 2">
+            <iframe class="map-iframe"
+              title="Mapa de ubicación de Love Kitty Café en Calpulalpan 252, San Felipe de Jesús, CDMX"
+              src="https://www.google.com/maps?q=19.4909254,-99.0680669&z=18&output=embed" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER: Contact as the Headline -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-note-block">
+        <strong>Love Kitty Café · CDMX</strong>
+        <p>Calpulalpan 252 esq. Tulipán, Col. San Felipe de Jesús, Gustavo A. Madero, 07510 Ciudad de México.</p>
+      </div>
+      <div class="footer-note-block-right">
+        <strong>Horarios de servicio</strong>
+        <p>Miércoles a viernes de 17:00 a 22:00 h. Sábados y domingos de 14:00 a 22:00 h. Lunes y martes cerrado.</p>
+      </div>
+      <a href="#inicio" class="footer-backtop">Volver arriba</a>
+    </div>
+
+    <div>
+      <p style="margin-bottom: 0.5rem;">Pedidos y reservaciones por WhatsApp directo:</p>
+      <a href="https://wa.me/525528659717" target="_blank" rel="noopener" class="footer-giant-phone nums">
+        55 2865 9717
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-socials">
+        <a href="https://maps.app.goo.gl/KW5aJsgtkSJgrUXC6" target="_blank" rel="noopener" class="text-link">Google
+          Maps</a>
+        <a href="https://wa.me/525528659717" target="_blank" rel="noopener" class="text-link">WhatsApp</a>
+        <a href="propuesta-2.html" class="text-link">Ver Propuesta 2 (Rosa Neón)</a>
+      </div>
+      <p class="footer-credits">
+        Fotografías adicionales: "Strawberry ice cream" de Arnoldius (CC BY-SA 3.0), "Hof Rheinblick, Geisenheim,
+        strawberry dessert" de Gerda Arendt (CC BY-SA 4.0), "Bavarian cream with strawberries" de SKopp (CC BY-SA 3.0),
+        "Strawberry ice cream dessert" (CC BY 2.0), vía Wikimedia Commons.
+      </p>
+    </div>
+  </footer>
+
+  <script src="PUBLIC/JS/app.js"></script>
+</body>
+
+</html>
